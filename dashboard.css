@@ -488,6 +488,12 @@ input[type="text"] {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 480px) {
+  .text-muted > input[type="text"] {
+  max-width: 90%;
+  }
+}
+
 textarea {
   width: 100%;
   text-align: left;
