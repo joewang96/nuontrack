@@ -1,0 +1,108 @@
+.checkbox {
+    margin-right: none;
+    padding-right: none;
+    margin-left: none;
+    padding-left: none;
+    margin-top: 0px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.bs-toggle {
+    padding-top: -10px;
+}
+
+.text-setting {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-setting {
+    }
+}
+
+#toggle-row {
+    margin-bottom: 1em;
+}
+
+/* ----------- Button for Downloading Docs ----- */
+
+#btn-download {
+    margin-top: 0em !important;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+/* ----------- File Upload Stylings ------------- */
+
+#btn-file {
+    margin-top: 0em !important;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+
+#upload-center {
+    text-align: center;
+}
+
+#filename {
+    text-align: left;
+}
+
+#upload-file {
+    margin-bottom: 1em;
+    align-content: center;
+}
+
+#upload-label {
+    color: #ca444d;
+    cursor: pointer;
+    margin-bottom: 1em;
+    font-size: 15px;
+    font-family: font-family: 'Open Sans', sans-serif;
+    /*font-weight: normal; add in if want to remove the bold */
+}
+
+#upload-file:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#edit2 {
+    font-size: 30px;
+}
+
+.car-div {
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.user-select {
+    background-color: #f8f8f8;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.file-complete {
+    /*color: #00fa60 !important;*/
+}
+
+#fa-xl {
+    font-size: 80px;
+}
+
+#upload-label:hover {
+    transform: scale(1.15);
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+

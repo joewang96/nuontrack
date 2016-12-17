@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NU:OnTrack</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="homepage.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- The fonts will be added here as necessary -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Social Media icons and buttons -->
+    <link href="css/social-buttons-3.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="home-brand" href="#"><img class="img-responsive" id="logo" src="images/logo3.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="login-js" href="" data-toggle="modal" data-target="#master-modal">Login</a></li>
+            <li><a class="account-js" href="" data-toggle="modal" data-target="#master-modal">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row blur-container">
+
+        <div class="section col-xs-12" id="top">
+          <h1>NU Co-Op Tracker</h1>
+          <h3>Apply to, manage, and track co-op applications easier than ever!</h3>
+          <p class="lead" id="scroll-btn">
+            <a class="btn btn-lg btn-default btn-red-fill" id="btn-home">Learn More</a>
+          </p>
+        </div>
+
+        <div class="section col-xs-12" id="marketing">
+          <h2>Northeastern Co-Op: An Overview</h2>
+          <p>At Northeastern, the Cooperative-Education (Co-Op) program is a key aspect of most students lives at some point throughout their time at the university. Co-Op is a distinctive educational approach which integrates rigorous classroom study with real world experiences to create a powerful way to learn. The program offers students the ability to work in real world job settings instead of attending traditional classroom courses.</p>
+          <p class="extra-top">Due to the fact that this site was designed to help students manage their individualized Co-Op search, it is required for users of this site to have a Husky Email - meaning they must be enrolled in the university. For more information on how to apply to Northeastern, visit their <a href="https://www.northeastern.edu/admissions/" target="_blank" class="no-dec" id="link-out"><em>Admissions page</em></a> located on the Northeastern website.</p>
+        </div>
+
+        <div class="section col-xs-12" id="marketing2">
+          <h2>Benefits to Using NU:OnTrack</h2>
+          
+          <div class="col-xs-12 col-sm-4" id="icon-section">
+            <i class="fa fa-xl fa-clock-o" aria-hidden="true"></i>
+            <p>Get all of your tasks done on time! Using the Co-Op Tracker allows you to manage all of your Co-Op applications easily and effictivley. Never again be caught off guard when application deadlines role around!</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-4" id="icon-section">
+            <i class="fa fa-xl fa-calendar" aria-hidden="true"></i>
+            <p>Plan your events and interviews with ease! This site offers users a simple way to quickly view all important information regarding any aspect of the Co-Op process.</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-4" id="icon-section">
+            <i class="fa fa-xl fa-line-chart" aria-hidden="true"></i>
+            <p>Track your progress and status on various job postings, applications, and interview sessions. We give users the tools necessary to see how well they are completing their tasks and where they might need to devote more time to nail that final interview!</p>
+          </div>
+
+        </div>
+
+        <div class="section col-xs-12" id="login-sect">
+          <h2>Sign-In or Create an Account</h2>
+          <p><a href="#" class="btn btn-lg btn-default btn-red-fill" id="btn-create" data-toggle="modal" data-target="#master-modal">Create Account</a></p>
+          <p><a href="#" class="btn btn-lg btn-default btn-red-out" id="btn-login" data-toggle="modal" data-target="#master-modal">Existing Login</a></p>
+        </div>
+
+      </div>
+
+      <!-- Place modals outside of row to allow for blurred background when opened -->
+
+      <!-- This is the create account modal
+      <div id="account-modal" class="modal fade" tabindex="-1" role="dialog">
+  		  <div class="modal-dialog">
+  				<div class="loginmodal-container">
+  					<h1>Create a New Account</h1><br>
+  				  <form action="dashboard.html">
+  			    <input type="text" name="user" placeholder="Husky Email">&nbsp;<i class="fa fa-md fa-question-circle" aria-hidden="true"></i>
+  					<input type="text" name="user" placeholder="NUID">
+  					<input type="password" name="pass" placeholder="Password ( > 8 char, symbol and number)">
+  					<input type="password" name="pass" placeholder="Confirm Password">
+  					<input type="submit" name="login" class="loginmodal-submit btn-red-fill" value="Register">
+  				  </form>
+  					
+  				  <div class="login-help">
+  					<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Existing User?</a>
+  				  </div>
+  				</div>
+  			</div>
+  		</div> /.modal -->
+
+
+
+      <!-- This is the login modal
+      <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+  		  <div class="modal-dialog">
+  				<div class="loginmodal-container">
+  					<h1>Login to Your Account</h1><br>
+  				  <form action="dashboard.html">
+  					<input type="text" name="user" placeholder="Husky Email">
+  					<input type="password" name="pass" placeholder="Password">
+  					<input type="submit" name="login" class="loginmodal-submit btn-red-fill" value="Login">
+  				  </form>
+  					
+  				  <div class="login-help">
+  					<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#account-modal">Register</a> - <a href="#">Forgot Password</a>
+  				  </div>
+  				</div>
+  			</div>
+  		</div> /.modal -->
+
+      <div id="master-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="loginmodal-container" id="login-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Login to Your Account</h1><br>
+            <form action="dashboard.html">
+              <input id="log-email" type="text" name="user" placeholder="Husky Email">
+              <input id="log-pass" type="password" name="pass" placeholder="Password">
+              <input type="submit" id="submit-login" name="login" class="loginmodal-submit btn-red-fill" value="Login" disabled="true">
+            </form>
+            
+            <div class="login-help">
+            <a href="#" class="account-js">Register</a>
+            <!--<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#account-modal">Register</a> --><!-- - <a href="#">Forgot Password</a> -->
+            </div>
+          </div>
+
+          <div class="loginmodal-container" id="account-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Create a New Account</h1><br>
+            <form action="dashboard.html">
+            <input id="acc-email" type="text" name="user" placeholder="Husky Email"><!--&nbsp;<i class="fa fa-md fa-question-circle" aria-hidden="true"></i>-->
+            <input id="acc-id" type="text" name="user" placeholder="NUID">
+            <input id="acc-pass" type="password" name="pass" placeholder="Password ( > 8 char, symbol and number)">
+            <input id="acc-confirm" type="password" name="pass" placeholder="Confirm Password">
+            <input type="submit" id="submit-acc" name="login" class="loginmodal-submit btn-red-fill" value="Register" disabled="true">
+            </form>
+            
+            <div class="login-help">
+              <a href="#" class="login-js">Existing User?</a>
+            <!--<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Existing User?</a>-->
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /.modal -->
+
+    </div>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted footer-text">&copy; Northeastern University | NU:OnTrack
+        <a class="text-muted float-right footer-link login-js" data-toggle="modal" data-target="#master-modal">Account</a>
+      </div>
+    </footer>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

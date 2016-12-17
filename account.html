@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NU:OnTrack | Account</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- The fonts will be added here as necessary -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Social Media icons and buttons -->
+    <link href="css/social-buttons-3.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Bootstrap Toggle Plugin (JS Below) -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="css/titatoggle-dist.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="dark-nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html"><img class="img-responsive" id="logo" src="images/logo3.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="dashboard.html">Overview</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="job-postings.html">Job Postings</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="account.html">Account &amp; Profile</a></li> <!--gotta get move logout to be on account-->
+          </ul>
+          <!-- Add back in if I ever want a search bar
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+          -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row blur-container">
+
+        <!-- the sidebar navigation menu -->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="logo">
+            <a class="navbar-brand" href="dashboard.html"><img id="logo-side" src="images/logo3.png"></a>
+          </div>
+          <hr class="divider"/>
+          <ul class="nav nav-sidebar">
+            <li><a href="dashboard.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="job-postings.html">Job Postings</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li class="active"><a href="account.html">Account &amp; Profile</a></li> <!--gotta get move logout to be on account-->
+          </ul>
+          <!-- Can add more if needed
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          -->
+        </div>
+
+        <!-- Divide between left sidebar and information on the right -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="page-header" id="username">Account &amp; Profile
+            <a href="#" data-toggle="popover" title="Using the Page" class="fa fa-question-circle expand" id="fa-head" aria-hidden="true" data-placement="bottom" data-content="You can edit your account preferences and settings regarding methods of contact, notification settings, and even update Co-Op documents here."></a>
+            <a href="index.html" class="fa fa-power-off float-right no-dec red-hover" aria-hidden="true" data-toggle="modal" data-target="#master-modal"></a>
+          </h2> <!-- User name (possibly use JS) -->
+
+          <h3 class="sub-header">Profile Information
+          <a class="fa fa-edit float-right no-dec disable-enable" id="edit1" aria-hidden="true"></a>
+          </h3>
+            <div class="row">
+              <div class="col-xs-4 col-sm-6 col-md-6">
+                <p>Name:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="input-name" type="text" value="John Doe" disabled="true">
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-6 col-md-6">
+                <p>Preferred Name:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="input-pref" type="text" value="John" disabled="true">
+              </div>
+
+            </div>
+            <div class="row">
+              
+              <div class="col-xs-4 col-md-6">
+                <p>Password:</p>
+              </div>
+              
+              <div class="col-xs-8 col-md-6 right text-muted">
+                <input id="input-password" type="text" value="PASSWORD1" disabled="true">
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-xs-4 col-md-6">
+                <p>Husky Email:</p>
+              </div>
+
+              <div class="col-xs-8 col-md-6 right text-muted">
+                <p class="acc-info">doe.j@husky.neu.edu</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6">
+                <p>NUID:</p>
+              </div>
+
+              <div class="col-xs-6 col-sm-6 col-md-6 right text-muted">
+                <p class="acc-info">037520275</p>
+              </div>
+
+            </div>
+            <div class="row">
+              
+              <div class="col-xs-6 col-md-6">
+                <p>Major:</p>
+              </div>
+              
+              <div class="col-xs-6 col-md-6 right text-muted">
+                <p class="acc-info">Computer Science and Interactive Media</p>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-xs-6 col-md-6">
+                <p>Graduation Date:</p>
+              </div>
+
+              <div class="col-xs-6 col-md-6 right text-muted">
+                <p class="acc-info">Spring 2020</p>
+              </div>
+
+            </div>
+
+
+
+          <br/>
+
+          <h3 class="sub-header">User Settings<a class="fa fa-plus-square-o float-right no-dec expand" aria-hidden="true" data-toggle="collapse" href="#user-settings-content"></a></h3>
+          <div class="collapse" id="user-settings-content">
+            
+            <div class="row">
+              <div class="col-xs-12 extra-bottom">
+                <a class="fa fa-edit float-right no-dec disable-enable" id="edit2" aria-hidden="true"></a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-6 col-md-6">
+                <p>Send Email Alerts To:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="user-email" type="text" placeholder="- None -" value="doe.j@husky.neu.edu" disabled="true">
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-xs-4 col-sm-6 col-md-6">
+                <p>Send SMS Alerts To:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="user-sms" type="text" placeholder="- None -" value="404-404-0000" disabled="true">
+              </div>
+
+            </div>
+            <div class="row">
+              
+              <div class="col-xs-4 col-md-6">
+                <p>Car Availability:</p>
+              </div>
+              
+              <div class="col-xs-8 col-md-6 right text-muted" id="car-div">
+                <select class="user-select" id="user-car" disabled="true">
+                  <option value="" disabled selected>Choose Car Availability</option>
+                  <option value="artwork">Can get access to a car</option>
+                  <option value="assessment">Cannot obtain a car</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-xs-4 col-md-6">
+                <p>LinkedIn ID:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="user-linkedin" type="text" placeholder="- None -" disabled="true">
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-xs-4 col-md-6">
+                <p>Skype ID:</p>
+              </div>
+
+              <div class="col-xs-8 col-sm-6 col-md-6 right text-muted">
+                <input id="user-skype" type="text" placeholder="- None -" disabled="true">
+              </div>
+
+            </div>
+
+          </div> <!-- end container of rows -->
+
+          <h3 class="sub-header">Notification Settings<a class="fa fa-plus-square-o float-right no-dec expand" aria-hidden="true" data-toggle="collapse" href="#notif-settings-content"></a></h3>
+
+          <div class="collapse" id="notif-settings-content">
+            
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Send Notifications via Email</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Send Notifications via SMS</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Notify on New Job Postings</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Notify on New Featured Postings</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Notify on "Applied" Job Updates</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Notify on New Upcoming Events</p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+            <div class="row" id="toggle-row">
+              
+              <div class="col-xs-8 col-md-8">
+                <p>Notify 24-Hours Prior to Registered Event </p>
+              </div>
+              
+              <div class="col-xs-4 col-md-4 right">
+                <label class="checkbox checkbox-slider-md checkbox-slider--b checkbox-slider-danger float-right">
+                    <input type="checkbox" checked="checked"><span></span>
+                  </label>
+              </div>
+
+            </div>
+
+          </div>
+          
+          <h3 class="sub-header">Co-Op Documents<a class="fa fa-plus-square-o float-right no-dec expand" aria-hidden="true" data-toggle="collapse" href="#coop-doc-content"></a></h3>
+          <div class="collapse" id="coop-doc-content">
+            <div class="table-responsive">
+              
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Action</th>
+                    <th>Document Name</th>
+                    <th>Document Type</th>
+                    <th>Date Created</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="hidden"><a href="">example</a></td>
+                    <td>
+                      <a href="extra/design-resume.rtf" download="extra/design-resume.rtf" class="btn btn-lg btn-default btn-gray-fill" id="btn-download">Download File</a>
+                    </td>
+                    <td>Design Resume</td>
+                    <td>Resume</td>
+                    <td>Nov. 12, 2016</td>
+                  </tr>
+                  <tr>
+                    <td id="hidden"><a href="">example</a></td>
+                    <td>
+                      <a href="extra/cover-letter.rtf" download="extra/cover-letter.rtf" class="btn btn-lg btn-default btn-gray-fill" id="btn-download">Download File</a>
+                    </td>
+                    <td>Cover Letter for Apple</td>
+                    <td>Cover Letter</td>
+                    <td>Oct. 15, 2016</td>
+                  </tr>
+                  <tr>
+                    <td id="hidden"><a href="">example</a></td>
+                    <td>
+                      <a href="extra/tech-resume.rtf" download="extra/tech-resume.rtf" class="btn btn-lg btn-default btn-gray-fill" id="btn-download">Download File</a>
+                    </td>
+                    <td>Technical Resume</td>
+                    <td>Resume</td>
+                    <td>Sept. 10, 2016</td>
+                  </tr>
+                  <tr>
+                    <td id="hidden"><a href="">example</a></td>
+                    <td>
+                      <a href="extra/ui-app-design.rtf" download="extra/ui-app-design.rtf" class="btn btn-lg btn-default btn-gray-fill" id="btn-download">Download File</a>
+                    </td>
+                    <td>UI App Designs</td>
+                    <td>Art Work</td>
+                    <td>June 3, 2016</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div> <!-- end responsive table -->
+
+            <div class="col-xs-12">
+              <p id="upload-center"><a href="#" class="btn btn-lg btn-default btn-red-fill" id="btn-file" data-toggle="modal" data-target="#file-modal">Upload New Documents</a></p>
+            </div>
+
+          </div> <!-- end collapse -->
+
+
+          <!-- <input type="checkbox" checked data-toggle="toggle"> -->
+
+          <!-- More sections can be added here before the close of the main div -->
+
+
+        </div>
+
+      </div> <!-- The row div -->
+
+      <!-- Put outside of row so it doesn't get blurred -->
+      <div id="master-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="loginmodal-container" id="logout-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Are You Sure You Want to Log Out?</h1><br>
+            <form action="index.html">
+            <input type="submit" name="login" class="loginmodal-submit btn-red-fill" value="Log Out">
+            </form>
+          </div>
+
+        </div>
+      </div><!-- /.modal -->
+
+      <div id="file-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="loginmodal-container" id="logout-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Upload a New Document</h1><br>
+            <form action="account.html">
+              
+              <div class="center" id="upload-div">
+                <input id="upload-file" type="file" name="file" class="inputfile"/>
+                <label id="upload-label" for="upload-file">
+                  <i class="fa fa-upload" id="fa-xl" aria-hidden="true"></i>
+                  <p id="file-extension">Choose a file...</p>
+                </label>
+              </div>
+              
+              <!--
+              <div class="center" id="upload-div">
+                <input type="file" name="file">
+              </div>
+              -->
+              <input id="filename" type="text" name="filename" placeholder="Create a File Name"/>
+              <select class="file-choices">
+                <option value="default" disabled selected>Choose a File Type</option>
+                <option value="artwork">Art Work</option>
+                <option value="assessment">Assessment</option>
+                <option value="coeagree">COE Co-Op Agreement</option>
+                <option value="coverletter">Cover Letter</option>
+                <option value="csshglobal">CSSH Global Co-op Job Choice Form</option>
+                <option value="dmsbreflection">DMSB Reflection Brochure</option>
+                <option value="letterofrec">Letter of Recomendation</option>
+                <option value="reference">References</option>
+                <option value="resume">Resume</option>   
+                <option value="transcript">Transcript</option>
+                <option value="worksample">Work Sample</option>
+                <option value="writingsample">Writing Sample</option>
+              </select>
+              <input type="submit" id="submit-file" name="login" class="loginmodal-submit btn-red-fill" value="Upload File" disabled="true">
+            </form>
+          </div>
+
+        </div>
+      </div><!-- /.modal -->
+
+    </div> <!-- The container div -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  </body>
+</html>

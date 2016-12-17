@@ -1,0 +1,106 @@
+/*
+body {
+  position: relative;
+}
+*/
+
+/* Divs and sectioning */
+#top {
+	min-height: 100vh;
+	padding-top: 30vh;
+	/* background stuff */
+	background-image: 
+		linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), 
+		url("images/top-bg.jpg");
+	background-size: cover;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 480px) {
+	#top {
+		padding-top: 25vh;
+	}
+}
+
+#marketing {
+	background-color: #FC5F5F;
+	color: #F8F8F8;
+	padding-top: 15vh;
+	padding-right: 15vw;
+	padding-left: 15vw;
+}
+
+#marketing > h2 {
+	padding-bottom: 1em;
+}
+
+#marketing2 {
+	/* background stuff */
+	background-image: 
+		linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), 
+		url("images/passion-bg.jpg");
+	background-size: cover;
+	color: rgba(255, 255, 255, 0.8);
+	padding-top: 10vh;
+}
+
+.section {
+	text-align: center;
+	min-height: 75vh;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-bottom: 5em;
+}
+
+#icon-section {
+	margin-top: 3em;
+}
+
+@media (max-width: 768px) {
+	#icon-section {
+		margin-bottom: 2em;
+	}
+}
+
+#login-sect {
+	min-height: 50vh;
+	padding-top: 3em;
+}
+
+#btn-create {
+	width: 14em;
+}
+
+#btn-login {
+	margin-top: 1em;
+	width: 14em;
+}
+
+/** --------------- Links -------------- */
+
+#link-out {
+  /*color: #8aefff;*/
+  color: #FFE4C4;
+}
+
+#link-out:hover,
+#link-out:focus {
+  color: #ffcf94;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+  transform: scale(1.2);
+}
+
+/** ------ Font Awesome stylings ------- */
+
+.fa-xl.fa {
+	font-size: 100px;
+	padding-bottom: 0.3em;
+	color: #f8f8f8;
+}
+
+.fa-md.fa {
+  font-size: 20px;
+}
+
+

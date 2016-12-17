@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>NU:OnTrack | Timeline</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="timeline.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!-- The fonts will be added here as necessary -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Social Media icons and buttons -->
+    <link href="css/social-buttons-3.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="dark-nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html"><img class="img-responsive" id="logo" src="images/logo3.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="dashboard.html">Overview</a></li>
+            <li class="active"><a href="timeline.html">Timeline</a></li>
+            <li><a href="job-postings.html">Job Postings</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="account.html">Account &amp; Profile</a></li> <!--gotta get move logout to be on account-->
+          </ul>
+          <!-- Add back in if I ever want a search bar
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+          -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row blur-container">
+
+        <!-- the sidebar navigation menu -->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="logo">
+            <a class="navbar-brand" href="dashboard.html"><img id="logo-side" src="images/logo3.png"></a>
+          </div>
+          <hr class="divider"/>
+          <ul class="nav nav-sidebar">
+            <li><a href="dashboard.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="timeline.html">Timeline</a></li>
+            <li><a href="job-postings.html">Job Postings</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="account.html">Account &amp; Profile</a></li> <!--gotta get move logout to be on account-->
+          </ul>
+          <!-- Can add more if needed
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          -->
+        </div>
+
+        <!-- Divide between left sidebar and information on the right -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="page-header" id="username">Timeline
+            <a href="#" data-toggle="popover" title="Using the Page" class="fa fa-question-circle expand" id="fa-head" aria-hidden="true" data-placement="bottom" data-content="The Timeline offers users a visual representation of what events and deadlines are approaching, based on their applied and saved jobs, as well as their overall status in their Co-Op search."></a>
+            <a href="index.html" class="fa fa-power-off float-right no-dec red-hover" aria-hidden="true" data-toggle="modal" data-target="#master-modal"></a>
+          </h2> <!-- User name (possibly use JS) -->
+
+          <!--<h3 class="sub-header">Timeline View</h3>-->
+
+          <div class="row center">
+            <p class="timeline-explained">Hover over to view event, click to see details below</p>
+          </div>
+          
+          <div class="row center">
+            
+            <div class="col-xs-12" id="time-div">
+              
+              <ul class="timeline">
+                <li class="time-point" id="time1" data-toggle="tooltip" data-placement="top" title="First Resume Referral">
+                  <span class="unseen">Oct. 1</span>
+                </li>
+                <li class="time-point" id="time2" data-toggle="tooltip" data-placement="top" title="Apple Interview">
+                  <span class="unseen">Oct. 5</span>
+                </li>
+                <li class="time-point" id="time3" data-toggle="tooltip" data-placement="top" title="Meeting with Advisor">
+                  <span class="unseen">Oct. 20</span>
+                </li>
+                <li class="time-point" id="time4" data-toggle="tooltip" data-placement="top" title="CCIS Expo Event">
+                  <span class="unseen">Nov. 3</span>
+                </li>
+                <li class="time-point" id="time5" data-toggle="tooltip" data-placement="top" title="State Street Interview">
+                  <span class="unseen">Dec. 13</span>
+                </li>
+                <li class="time-point" id="time6" data-toggle="tooltip" data-placement="top" title="Final Resume Referrals">
+                  <span class="unseen">Jan. 1</span>
+                </li>
+              </ul>
+
+            </div> <!-- end time-div -->
+
+            <div class="col-xs-12">
+              <p id="upload-center"><a href="#" class="btn btn-lg btn-default btn-gray-fill" id="btn-time" data-toggle="modal" data-target="#time-modal">Create New Event</a></p>
+            </div>
+
+          </div> <!-- end row -->
+
+          <h3 class="sub-header">Timeline Event Information
+          <a href="#" data-toggle="popover" title="Using the Timeline" class="fa fa-question-circle expand" id="fa-head" aria-hidden="true" data-placement="bottom" data-content="Click on the different timeline events to display their full information in the area below. You may still hover over different points to view the title, however you must click to change the full descriptions."></a>
+          </h3>
+          <div class="row" id="content-div">
+            <div class="col-xs-12 block">
+
+              <div class="table-fixed">
+                  <table class="table" id="time-table">
+                    
+                    <tbody>
+                      <tr>
+                        <td class="sm-width"><strong>Event Title:</strong></td>
+                        <td class="left" id="time-head">  ---  </td>  
+                      </tr>
+
+                      <tr>
+                        <td class="sm-width"><strong>Event Date:</strong></td>
+                        <td class="left" id="time-date">  ---  </td>  
+                      </tr>
+
+                      <tr>
+                        <td class="sm-width"><strong>Event Time:</strong></td>
+                        <td class="left" id="time-time">  ---  </td>  
+                      </tr>
+
+                      <tr>
+                        <td class="sm-width"><strong>Description:</strong></td>
+                        <td class="left" id="time-body">  ---  </td>  
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </div> <!-- end responsive table -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- More sections can be added here before the close of the main div -->
+
+      </div> <!-- The row div -->
+
+      <!-- Put outside of row so it doesn't get blurred -->
+      <div id="master-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="loginmodal-container" id="logout-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Are You Sure You Want to Log Out?</h1><br>
+            <form action="index.html">
+            <input type="submit" name="login" class="loginmodal-submit btn-red-fill" value="Log Out">
+            </form>
+          </div>
+
+        </div>
+      </div><!-- /.modal -->
+
+      <div id="time-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          
+          <div class="loginmodal-container" id="logout-mod">
+            <div class="close-div">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <h1>Create a New Timeline Event</h1><br>
+            <form action="timeline.html">                
+              <input id="input-time-title" class="input-time" type="text" name="time-title" placeholder="Create a Title for the Event"/>
+              <input id="input-time-date" class="input-time" type="text" name="time-date" placeholder="Choose a Date for the Event"/>
+              <input id="input-time-time" class="input-time" type="text" name="time-time" placeholder="Choose a Time for the Event"/>
+              <textarea id="input-time-desc" name="time-desc" placeholder="Enter a description..." rows="4"></textarea>
+              <input type="submit" id="submit-time" name="login" class="loginmodal-submit btn-red-fill" value="Create New Event" disabled="true">
+            </form>
+          </div>
+
+        </div>
+      </div><!-- /.modal -->
+
+    </div> <!-- The container div -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://use.fontawesome.com/b11443ab84.js"></script>
+  </body>
+</html>
