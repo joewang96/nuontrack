@@ -490,7 +490,7 @@ input[type="text"] {
 
 @media (max-width: 480px) {
   .text-muted > input[type="text"] {
-  max-width: 90%;
+  max-width: 60%;
   }
 }
 
